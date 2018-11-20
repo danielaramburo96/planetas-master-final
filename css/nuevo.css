@@ -1,0 +1,54 @@
+body {
+    background-color: #00092F;
+    background-image: url("../img/02.png");
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.planetas__item-img,
+.contenedores__item {
+    width: 9vw;
+}
+
+.planetas {
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planetas__item {
+    margin: 0 5px;
+}
+
+.contenedores {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedores__item {
+    opacity: .5;
+    transition: all .25s;
+    margin: 0 5px;
+}
+
+.contenedores__item-img {
+    pointer-events: none;
+}
+
+.contenedores__item--correcto {
+    opacity: 1;
+}

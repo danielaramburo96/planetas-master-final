@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nuevo.css">
+	<title>SOLAR PLAY</title>
+</head>
+
+<body>
+
+    <div class="planetas">
+        <!-- Es importante que el atributo "data-planeta" conincida con el de los contenedores -->
+        <div class="planetas__item" data-planeta="mercurio">
+            <img src="img/mercurio.gif" class="planetas__item-img" alt="Mercurio">
+        </div>
+        <div class="planetas__item" data-planeta="marte">
+            <img src="img/marte.gif" class="planetas__item-img" alt="Marte">
+        </div>
+        <div class="planetas__item" data-planeta="jupiter">
+            <img src="img/jupiter.gif" class="planetas__item-img" alt="jupiter">
+        </div>
+        <div class="planetas__item" data-planeta="neptuno">
+            <img src="img/neptuno.gif" class="planetas__item-img" alt="neptuno">
+        </div>
+        <div class="planetas__item" data-planeta="saturno">
+            <img src="img/saturno.gif" class="planetas__item-img" alt="saturno">
+        </div>
+        <div class="planetas__item" data-planeta="tierra">
+            <img src="img/tierra.gif" class="planetas__item-img" alt="tierra">
+        </div>
+        <div class="planetas__item" data-planeta="urano">
+            <img src="img/urano.png" class="planetas__item-img" alt="urano">
+        </div>
+        <div class="planetas__item" data-planeta="venus">
+            <img src="img/venus.gif" class="planetas__item-img" alt="venus">
+        </div>
+    </div>
+
+    <div class="contenedores">
+        <div class="contenedores__item" data-planeta="mercurio"><img src="img/mercurio.gif" alt="Mercurio" class="contenedores__item-img"></div>
+		<div class="contenedores__item" data-planeta="venus"><img src="img/venus.gif" alt="venus" class="contenedores__item-img"></div>
+        <div class="contenedores__item" data-planeta="tierra"><img src="img/tierra.gif" alt="tierra" class="contenedores__item-img"></div>
+        <div class="contenedores__item" data-planeta="marte"><img src="img/marte.gif" alt="Marte" class="contenedores__item-img"></div>
+        <div class="contenedores__item" data-planeta="jupiter"><img src="img/jupiter.gif" alt="jupiter" class="contenedores__item-img"></div>
+        <div class="contenedores__item" data-planeta="saturno"><img src="img/saturno.gif" alt="saturno" class="contenedores__item-img"></div>
+        <div class="contenedores__item" data-planeta="urano"><img src="img/urano.png" alt="urano" class="contenedores__item-img"></div>
+        <div class="contenedores__item" data-planeta="neptuno"><img src="img/neptuno.gif" alt="neptuno" class="contenedores__item-img"></div>
+    </div>
+
+    <!-- Usé jQuery y un plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3/dist/interact.min.js"></script>
+    <script src="js/nuevo.js"></script>
+
+</body>
+
+</html>

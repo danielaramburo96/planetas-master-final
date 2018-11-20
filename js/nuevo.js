@@ -21,7 +21,7 @@ $(document).ready(() => {
                 const newClass = sels.contenedores + "--correcto";
                 $itemContenedor.addClass(newClass.split(".")[1]);
                 $itemPlaneta.fadeOut("fast");
-                isCorrecto = true;
+				isCorrecto = true;
             } else {
                 isCorrecto = false;
             }
@@ -29,7 +29,17 @@ $(document).ready(() => {
                 alert("Incorrecto");
             }
             return dropped && isCorrecto;
-        }
+		},
+		ondrop: (evt) => {
+			let isWin = true;
+			$DOM.contenedores.each(function(i) {
+				const $this = $(this);
+				if (!$this.hasClass("contenedores__item--correcto")) {
+					isWin = false;
+				}
+			});
+			isWin === true ? alert("Ganaste!") : "";
+		}
 	});
 
 	interact(sels.planetas).draggable({

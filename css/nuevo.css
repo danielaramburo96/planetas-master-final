@@ -1,6 +1,6 @@
 body {
     background-color: #00092F;
-    background-image: url("../img/02.png");
+    /*background-image: url("../img/02.png");*/
 }
 
 img {
@@ -10,7 +10,7 @@ img {
 
 .planetas__item-img,
 .contenedores__item {
-    width: 9vw;
+    width: 12vw;
 }
 
 .planetas {
